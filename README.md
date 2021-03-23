@@ -1,5 +1,8 @@
 # jb_project
 
+### Design Mockups
+https://www.figma.com/file/E5btfIMCDVauxXKDiT2q1f/JB_Project?node-id=0%3A1
+
 ## Project setup
 ```
 yarn install
