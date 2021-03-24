@@ -50,10 +50,6 @@ export default {
   @import '@/style/_variables.scss';
 
   .notifications-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 1px solid $grey-light;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto;
@@ -62,6 +58,8 @@ export default {
       ". label organizations";
     column-gap: 1rem;
     row-gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid $grey-light;
     &:hover {
       border-radius: $border-radius;
       background-color: lighten($light-blue, 3%);
