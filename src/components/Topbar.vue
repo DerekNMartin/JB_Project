@@ -24,6 +24,9 @@ import NotificationList from '../components/NotificationList.vue'
 
 export default {
   name: 'TopBar',
+  components: {
+    NotificationList
+  },
   data() {
     return {
       showNotificationList: false,
@@ -32,9 +35,6 @@ export default {
         revenue: '$68,123.00'
       }
     }
-  },
-  components: {
-    NotificationList
   },
   methods: {
     toggleNotificationList() {
