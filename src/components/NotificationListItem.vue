@@ -68,7 +68,7 @@ export default {
       cursor: pointer;
     }
     &-img {
-      grid-area: "img";
+      grid-area: img;
       width: 50px;
       height: 50px;
       background-color: $light-blue;
