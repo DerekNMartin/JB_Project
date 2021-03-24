@@ -21,7 +21,7 @@ const notificationList = [
       },
       {
         name: 'Organization 3',
-        uuid: 'organization-abc-abc'
+        uuid: 'organization-abc-abc-abc'
       },
     ],
     invoiceUUID: null,
@@ -31,7 +31,7 @@ const notificationList = [
     uuid: 'aaa-bbb-aaa-bbb',
     dateCreated: '30 hours ago',
     readStatus: 'read',
-    priority: 'urgent',
+    priority: 'low',
     title: 'Campaign X performance has increased by 5%',
     description: 'Performance on Campaign X has increased by 5% since yesterday!',
     campaign: {
@@ -49,17 +49,17 @@ const notificationList = [
       },
       {
         name: 'Organization 3',
-        uuid: 'organization-abc-abc'
+        uuid: 'organization-abc-abc-abc'
       },
     ],
     invoiceUUID: null,
     profilePicture: null,
   },
   {
-    uuid: 'aaa-bbb',
+    uuid: 'aaa-bbb-ccc',
     dateCreated: '10 days ago',
     readStatus: 'unread',
-    priority: 'urgent',
+    priority: 'medium',
     title: 'You have been approved on Campaign X ',
     description: 'Some description on being approved on Campaign X.',
     campaign: {
@@ -82,6 +82,7 @@ const notificationList = [
 ]
 
 export async function getNotifications() {
+  // GET ...api/user/uuid/notifications
   try {
     return notificationList
   } catch (error) {
